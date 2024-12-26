@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Marketplace</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="landing-container">
+        <div class="logo">
+            <h1>Vehicle Marketplace</h1>
+            <p>Your trusted platform to buy and sell vehicles with ease.</p>
+        </div>
+
+        <div class="options">
+            <button class="btn-seller" onclick="showSellerLogin()">Login as Seller</button>
+            <button class="btn-customer" onclick="enterMarketplace()">Enter as Customer</button>
+        </div>
+
+        <div class="login-container" id="sellerLogin">
+            <h2>Seller Login</h2>
+            <form action="/seller-login" method="POST">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vehicle Marketplace</p>
+    </footer>
+
+    <script src="public/js/main.js"></script>
+</body>
+</html>
